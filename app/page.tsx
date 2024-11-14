@@ -9,6 +9,7 @@ import Avatar3 from "@/public/avatar3.png";
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
 import Oval from "@/public/icons/oval.png";
 import Cards from "@/components/HeroCards";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
   return (
@@ -150,9 +151,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* faqs section  */}
       <section className="mt-10 md:mt-20 lg:mt-40">
-        <div className="container">
-          <h1>Frequently asked Questions</h1>
+        <div className="container flex flex-col lg:flex-row justify-between px-4 md:px-8 lg:px-20">
+          <h1 className="font-redHat font-black lg:text-4xl">Frequently asked Questions</h1>
+        <FAQs />
         </div>
       </section>
     </>
