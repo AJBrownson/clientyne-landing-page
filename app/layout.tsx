@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 // import fonts from "@/styles"
 
 const onest = localFont({
@@ -56,8 +57,9 @@ export default function RootLayout({
       <body
         className={`${redHat.variable} ${onest.variable} antialiased`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );

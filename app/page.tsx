@@ -7,6 +7,7 @@ import Avatar1 from "@/public/avatar1.png";
 import Avatar2 from "@/public/avatar2.png";
 import Avatar3 from "@/public/avatar3.png";
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
+import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png";
 import Oval from "@/public/icons/oval.png";
 import Cards from "@/components/HeroCards";
 import FAQs from "@/components/FAQs";
@@ -30,10 +31,10 @@ export default function Home() {
               focus on what matters most.
             </p>
             <div className="mt-6 flex justify-center">
-              <Button className="flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full">
-                Book a demo{" "}
+              <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full hover:bg-[#008080]">
+                Book a Demo{" "}
                 <span>
-                  <Image src={ArrowRight} alt="" />
+                  <Image src={ArrowRightGreen} alt="" className="w-5 h-5" />
                 </span>
               </Button>
             </div>
@@ -45,34 +46,37 @@ export default function Home() {
             <Image
               src={Hero}
               alt="Hero image of Clientyne dashboard"
-              className="hidden md:block md:top-14 absolute"
+              className="top-14 absolute"
             />
           </div>
         </div>
       </section>
 
-      <section className="pt-80 lg:pt-[30rem]">
+      {/* features section  */}
+      <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
         <div className="container flex flex-col items-center justify-center px-4 md:px-8 lg:px-20">
-          <div className="relative flex justify-evenly items-center w-full max-w-[451px] py-4 text-[#F5F5F5] px-2 rounded-full bg-[#0E0E0D]">
-            <div className="flex w-full max-w-[88px] -mt-10">
-              <Image
-                src={Avatar1}
-                alt=""
-                className="w-5 h-5 lg:w-10 lg:h-10 object-contain absolute left-5"
-              />
-              <Image
-                src={Avatar2}
-                alt=""
-                className="w-6 h-6 lg:w-12 lg:h-12 object-contain absolute left-10"
-              />
-              <Image
-                src={Avatar3}
-                alt=""
-                className="w-6 h-6 lg:w-12 lg:h-12 object-contain absolute left-[3.8rem]"
-              />
+          <div className="flex justify-between items-center gap-x-5 max-w-[400px] text-[#F5F5F5] px-2 rounded-full bg-[#0E0E0D]">
+          <div className="flex flex-col items-center justify-center mt-1">
+              <div className="flex -space-x-3 lg:-space-x-5">
+                <Image
+                  alt=""
+                  className="w-5 h-5 lg:w-10 lg:h-10"
+                  src={Avatar1}
+                />
+                <Image
+                  alt=""
+                  className="w-6 h-6 lg:w-12 lg:h-12"
+                  src={Avatar2}
+                />
+                <Image
+                  alt=""
+                  className="w-6 h-6 lg:w-12 lg:h-12"
+                  src={Avatar3}
+                />
+              </div>
             </div>
 
-            <div className="text-sm text-center font-medium font-onest">
+            <div className="text-xs md:text-sm text-center font-medium font-onest pr-2 md:pr-4">
               Ready to onboard{" "}
               <span className="font-semibold text-[#FFF]">10,000+</span>{" "}
               businesses
@@ -102,32 +106,37 @@ export default function Home() {
       {/* about section */}
       <section className="mt-20 lg:mt-20 flex flex-col lg:flex-row justify-between items-center">
         <div className="container flex flex-col lg:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
-          <div className="flex flex-col order-last lg:order-first max-w-[533px]">
-            <h1 className="font-redHat lg:text-4xl leading-relaxed mb-5">
+          <div className="flex flex-col order-last lg:order-first max-w-[520px]">
+            <h1 className="font-redHat font-black lg:text-4xl leading-relaxed mb-5">
               <span className="text-[#626262]">Clientyne:</span> Built for your
               business growth
             </h1>
-            <p className="text-[#626262] font-onest lg:text-base mt-3">
+            <p className="text-[#626262] font-onest font-medium lg:text-base mt-3">
               Clientyne is a customer management platform designed to empower
               small and medium businesses. We offer intuitive tools to
               streamline customer interactions, gain insights, and manage
               essential business tasks like invoicing and analytics.
             </p>
-            <p className="text-[#3D3D3D] font-onest lg:text-base mt-3">
+            <p className="text-[#3D3D3D] font-onest font-medium lg:text-base mt-3">
               Our mission is to simplify business management for small and
               medium businesses, helping them grow through efficient,
               user-friendly tools.
             </p>
-            <p className="text-[#626262] font-onest lg:text-base mt-3">
+            <p className="text-[#626262] font-onest font-medium lg:text-base mt-3">
               Our vision is to become the go-to platform for businesses
               worldwide, transforming customer management into a seamless and
               empowering experience.
             </p>
           </div>
-          <Image src={About} alt="" className="lg:w-[528px] lg:h-[440px]" />
+          <Image
+            src={About}
+            alt=""
+            className="lg:w-[528px] lg:h-[440px] object-contain"
+          />
         </div>
       </section>
 
+      {/* call to action card section */}
       <section className="mt-10 md:mt-20 lg:mt-40">
         <div className="container px-4 md:px-8 lg:px-28">
           <div className="py-10 px-8 lg:py-20 text-center bg-[#333333] text-[#FFF] rounded-xl max-w-[1036px]">
@@ -140,10 +149,10 @@ export default function Home() {
               together!
             </p>
             <div className="mt-6 lg:mt-11 flex justify-center">
-              <Button className="flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full">
+              <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#FFF] text-[#3D3D3D] hover:bg-[#FFF] py-6 px-4 rounded-full">
                 Book a demo{" "}
                 <span>
-                  <Image src={ArrowRight} alt="" />
+                  <Image src={ArrowRight} alt="" className="w-5 h-5" />
                 </span>
               </Button>
             </div>
@@ -154,8 +163,10 @@ export default function Home() {
       {/* faqs section  */}
       <section className="mt-10 md:mt-20 lg:mt-40">
         <div className="container flex flex-col lg:flex-row justify-between px-4 md:px-8 lg:px-20">
-          <h1 className="font-redHat font-black lg:text-4xl">Frequently asked Questions</h1>
-        <FAQs />
+          <h1 className="font-redHat font-black lg:text-4xl">
+            Frequently asked Questions
+          </h1>
+          <FAQs />
         </div>
       </section>
     </>
