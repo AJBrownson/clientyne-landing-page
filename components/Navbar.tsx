@@ -5,15 +5,15 @@ import Logo from "@/public/clientyne-logo.svg";
 export default function Navbar() {
   return (
     <>
-      <header className="fixed w-full flex justify-center py-10 z-50">
-        <nav className="flex justify-between items-center bg-[#0E0E0D] text-[#C6C6C6] h-16 px-2 w-full max-w-[700px] rounded-full">
+      <header className="fixed w-full flex justify-center py-10 z-50 px-4 md:px-8">
+        <nav className="flex justify-between items-center bg-[#0E0E0D] text-[#C6C6C6] h-16 px-2 w-full sm:max-w-[500px] lg:max-w-[700px] rounded-full">
           <div className="flex items-center gap-x-2">
             <Image src={Logo} alt="Clientyne's Logo" />
             <p className="font-onest font-extrabold text-lg text-[#fff]">
               Clientyne
             </p>
           </div>
-          <ul className="flex justify-between gap-x-10 text-xs">
+          <ul className="hidden lg:flex justify-between gap-x-10 text-xs">
             <li className="font-onest font-medium lg:text-base">Home</li>
             <li className="font-onest font-medium lg:text-base">Company</li>
             <li className="font-onest font-medium lg:text-base">FAQ</li>

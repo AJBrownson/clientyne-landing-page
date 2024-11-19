@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <footer className="px-4 md:px-8 lg:px-20 pt-10 pb-6 bg-[#0E0E0D] mt-10 lg:mt-28">
-        <div className="container flex items-center justify-between">
+        <div className="container flex flex-col lg:flex-row lg:items-center justify-between">
           <div className="flex flex-col max-w-[369px]">
             <div className="flex items-center gap-x-1">
               <Image src={Logo} alt="" />
@@ -18,19 +18,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between lg:gap-x-20">
+          <div className="mt-5 flex flex-col md:flex-row justify-between lg:gap-x-20">
             <div>
               <p className="text-[#FFFFFF] font-onest font-semibold text-base">Company</p>
               <p className="font-onest font-medium text-[#C6C6C6] text-sm my-3">About Us</p>
               <p className="font-onest font-medium text-[#C6C6C6] text-sm">Contact Us</p>
             </div>
 
-            <div>
+            <div className="mt-5 md:mt-0">
               <p className="text-[#FFFFFF] font-onest font-semibold text-base">Get in Touch</p>
-              <p className="font-onest font-medium text-[#C6C6C6] text-sm my-3">Clientyne@gmail.com</p>
+              <p className="font-onest font-medium text-[#C6C6C6] text-sm mt-3">Clientyne@gmail.com</p>
             </div>
 
-            <div>
+            <div className="mt-5 md:mt-0">
               <p className="text-[#FFFFFF] font-onest font-semibold text-base">Connect with Us</p>
               <p className="font-onest font-semibold text-[#C6C6C6] text-sm mt-3">X</p>
               <p className="font-onest font-semibold text-[#C6C6C6] text-sm my-3">Instagram</p>
@@ -39,6 +39,7 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* lower footer section */}
         <div className="container flex space-x-1 border-t-[1px] border-[#2D2D2D] mt-4 lg:mt-8">
           <p className="font-onest text-xs text-[#C6C6C6] font-medium pt-2">&copy;</p>
           <p className="font-onest text-xs text-[#C6C6C6] font-medium pt-2">2024 Clientyne</p>

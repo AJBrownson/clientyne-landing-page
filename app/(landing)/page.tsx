@@ -20,7 +20,7 @@ export default function Home() {
       <section className="pt-32 md:pt-36 lg:pt-44">
         <div className="container flex flex-col px-4 md:px-8 lg:px-40">
           <div className="mx-auto max-w-[864px] justify-center text-center">
-            <h1 className="font-redHat text-[#3D3D3D] text-2xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
+            <h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
               Simplify Customer Management and{" "}
               <span className="text-[#FF8749] lg:leading-[63.5px]">
                 Boost Growth
@@ -73,18 +73,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div>
+          <div className="hidden lg:block">
             <Image src={PillIcon} alt="" className="lg:w-14 lg:h-14 " />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-5">
-            <Card className="bg-[#333333] w-full max-w-[216px] h-[194px]">
+          <div className="flex gap-5 mt-8 lg:mt-0">
+            <Card className="bg-[#333333] w-full max-w-[216px] lg:h-[194px]">
               <CardHeader className="font-redHat text-[#fff] text-[32px]">5k</CardHeader>
-              <CardContent className="font-onest font-medium text-sm text-[#C6C6C6] max-w-[184px]">
+              <CardContent className="font-onest font-medium text-sm text-[#C6C6C6] w-full mx-auto max-w-[184px]">
                 Active businesses ready to onboard Clientyne!
               </CardContent>
             </Card>
-            <Card className="bg-[#F9F9F9] w-full max-w-[216px] h-[194px]">
+            <Card className="bg-[#F9F9F9] w-full max-w-[216px] lg:h-[194px]">
               <CardHeader className="font-redHat text-[#3D3D3D] text-[32px]">4.9</CardHeader>
               <CardContent className="font-onest font-medium text-sm text-[#A5A5A5]">
                 <div className="flex justify-between items-center mb-3">
@@ -127,8 +127,8 @@ export default function Home() {
       {/* about section */}
       <section className="mt-20 lg:mt-20 flex flex-col lg:flex-row justify-between items-center">
         <div className="container flex flex-col lg:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
-          <div className="flex flex-col order-last lg:order-first max-w-[520px]">
-            <h1 className="font-redHat font-black lg:text-4xl leading-relaxed mb-5">
+          <div className="flex flex-col order-last lg:order-first w-full lg:max-w-[520px]">
+            <h1 className="font-redHat font-black text-center md:text-left text-2xl lg:text-4xl leading-relaxed mt-3 mb-2 lg:mb-5">
               <span className="text-[#626262]">Clientyne:</span> Built for your
               business growth
             </h1>
@@ -185,9 +185,9 @@ export default function Home() {
       </section>
 
       {/* faqs section  */}
-      <section className="mt-10 md:mt-20 lg:mt-40">
+      <section className="mt-20 lg:mt-40">
         <div className="container flex flex-col lg:flex-row justify-between px-4 md:px-8 lg:px-20">
-          <h1 className="font-redHat font-black lg:text-4xl">
+          <h1 className="font-redHat font-black text-2xl text-center lg:text-left mb-4 lg:text-4xl">
             Frequently asked Questions
           </h1>
           <FAQs />
