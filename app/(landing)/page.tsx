@@ -9,8 +9,11 @@ import Avatar3 from "@/public/avatar3.png";
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
 import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png";
 import Oval from "@/public/icons/oval.png";
+import Star from "@/public/icons/Star.png"
 import Cards from "@/components/HeroCards";
 import FAQs from "@/components/FAQs";
+
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -52,39 +55,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* features section  */}
+      {/* onboarding businesses section */}
       <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
-        <div className="container flex flex-col items-center justify-center px-4 md:px-8 lg:px-20">
-          <div className="flex justify-between items-center gap-x-5 max-w-[400px] text-[#F5F5F5] px-2 rounded-full bg-[#0E0E0D]">
-          <div className="flex flex-col items-center justify-center mt-1">
-              <div className="flex -space-x-3 lg:-space-x-5">
-                <Image
-                  alt=""
-                  className="w-5 h-5 lg:w-10 lg:h-10"
-                  src={Avatar1}
-                />
-                <Image
-                  alt=""
-                  className="w-6 h-6 lg:w-12 lg:h-12"
-                  src={Avatar2}
-                />
-                <Image
-                  alt=""
-                  className="w-6 h-6 lg:w-12 lg:h-12"
-                  src={Avatar3}
-                />
-              </div>
-            </div>
-
-            <div className="text-xs md:text-sm text-center font-medium font-onest pr-2 md:pr-4">
+        <div className="container flex flex-col md:flex-row justify-between px-4 md:px-8 lg:px-20">
+          <div className="max-w-[570px]">
+            <h1 className="font-redHat font-extrabold text-xl lg:text-[32px] text-[#626262] max-w-[405px] leading-tight mb-4">
               Ready to onboard{" "}
-              <span className="font-semibold text-[#FFF]">10,000+</span>{" "}
-              businesses
-            </div>
+              <span className="text-[#3D3D3D]">10,000+ businesses</span>
+            </h1>
+            <p className="font-onest font-medium text-[#626262] lg:text-base mb-3">
+              Clientyne is ready to onboard 10,000+ businesses. Streamline
+              customer management, analytics, and checkouts with AI-driven
+              insights.
+            </p>
+            <p className="font-onest font-semibold text-[#626262] lg:text-base">
+              Transform your business with Clientyne.
+            </p>
           </div>
+          <div className="flex flex-col md:flex-row gap-5">
+            <Card className="bg-[#333333] w-full max-w-[216px] h-[194px]">
+              <CardHeader className="font-redHat text-[#fff] text-[32px]">5k</CardHeader>
+              <CardContent className="font-onest font-medium text-sm text-[#C6C6C6] max-w-[184px]">
+                Active businesses ready to onboard Clientyne!
+              </CardContent>
+            </Card>
+            <Card className="bg-[#F9F9F9] w-full max-w-[216px] h-[194px]">
+              <CardHeader className="font-redHat text-[#3D3D3D] text-[32px]">4.9</CardHeader>
+              <CardContent className="font-onest font-medium text-sm text-[#A5A5A5]">
+                <div className="flex justify-between items-center mb-3">
+                  <Image src={Star} alt="" className="w-5 h-5" />
+                  <Image src={Star} alt="" className="w-5 h-5" />
+                  <Image src={Star} alt="" className="w-5 h-5" />
+                  <Image src={Star} alt="" className="w-5 h-5" />
+                  <Image src={Star} alt="" className="w-5 h-5" />
+                </div>
+              Rating processing...
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
+      {/* features section  */}
+      <section className="mt-20 lg:mt-20">
+        <div className="container flex flex-col items-center justify-center px-4 md:px-8 lg:px-20">
           <div className="max-w-[766px] mx-auto text-center">
-            <div className="mt-20 flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
               <h1 className="text-[#3D3D3D] font-redHat font-black text-2xl lg:text-4xl lg:leading-snug max-w-[500px]">
                 Smart solutions for your{" "}
                 <span className="text-[#626262]">business growth</span>
