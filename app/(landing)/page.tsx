@@ -5,8 +5,7 @@ import Hero from "@/public/hero.png";
 import About from "@/public/about-image.png";
 import PillIcon from "@/public/icons/Pill 1.png"
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
-import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png";
-import Oval from "@/public/icons/oval.png";
+import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png"
 import Star from "@/public/icons/Star.png"
 import Cards from "@/components/HeroCards";
 import FAQs from "@/components/FAQs";
@@ -169,7 +168,7 @@ export default function Home() {
             </p>
             <div className="mt-6 lg:mt-11 flex justify-center">
               <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#FFF] text-[#3D3D3D] hover:bg-[#FFF] py-6 px-4 rounded-full">
-                Book a demo{" "}
+                Join Waitlist{" "}
                 <span>
                   <Image src={ArrowRight} alt="" className="w-5 h-5" />
                 </span>

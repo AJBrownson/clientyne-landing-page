@@ -6,6 +6,11 @@ import Marketplace from "@/public/icons/marketplace.png";
 import Clients from "@/public/icons/clients.png";
 import Invoice from "@/public/icons/invoice.png";
 
+import Cube from "@/public/icons/cube.png"
+import BlueCube from "@/public/icons/blue-cube.png"
+import Cylinder from "@/public/icons/Cylinder.png"
+import Pyramid from "@/public/icons/Pyramid.png"
+
 export default function Cards() {
   const content = [
     {
