@@ -6,6 +6,7 @@ import About from "@/public/about-image.png";
 import PillIcon from "@/public/icons/Pill 1.png"
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
 import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png"
+import Img from "@/public/icons/img.png"
 import Star from "@/public/icons/Star.png"
 import Cards from "@/components/HeroCards";
 import FAQs from "@/components/FAQs";
@@ -40,6 +41,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30">
+              {/* Gradient Background */}
+  <div className="absolute inset-0 w-full bg-heroBG bg-cover bg-center -z-10"></div>
             <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} />
             {/* </div> */}
 
@@ -157,7 +160,7 @@ export default function Home() {
       {/* call to action card section */}
       <section className="mt-10 md:mt-20 lg:mt-40">
         <div className="container px-4 md:px-8 lg:px-28">
-          <div className="py-10 px-8 lg:py-20 text-center bg-[#333333] text-[#FFF] rounded-xl max-w-[1036px]">
+          <div className="py-10 px-8 lg:py-20 text-center relative bg-[#333333] text-[#FFF] rounded-xl max-w-[1036px]">
             <h1 className="font-redHat text-xl font-extrabold lg:text-4xl mb-5">
               Join us early and grow your business
             </h1>
@@ -166,7 +169,7 @@ export default function Home() {
               businesses in our first stage. Join us early and let’s grow
               together!
             </p>
-            <div className="mt-6 lg:mt-11 flex justify-center">
+            <div className="mt-6 mb-5 lg:mt-11 flex justify-center">
               <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#FFF] text-[#3D3D3D] hover:bg-[#FFF] py-6 px-4 rounded-full">
                 Join Waitlist{" "}
                 <span>
@@ -174,6 +177,9 @@ export default function Home() {
                 </span>
               </Button>
             </div>
+            <div className="flex justify-center">
+          <Image src={Img} alt="" className="w-[180px] absolute bottom-0" />
+          </div>
           </div>
         </div>
       </section>
