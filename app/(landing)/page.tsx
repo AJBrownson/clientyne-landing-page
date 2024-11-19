@@ -3,9 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Hero from "@/public/hero.png";
 import About from "@/public/about-image.png";
-import Avatar1 from "@/public/avatar1.png";
-import Avatar2 from "@/public/avatar2.png";
-import Avatar3 from "@/public/avatar3.png";
+import PillIcon from "@/public/icons/Pill 1.png"
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
 import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png";
 import Oval from "@/public/icons/oval.png";
@@ -35,7 +33,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex justify-center">
               <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full hover:bg-[#008080]">
-                Book a Demo{" "}
+                Join Waitlist{" "}
                 <span>
                   <Image src={ArrowRightGreen} alt="" className="w-5 h-5" />
                 </span>
@@ -57,7 +55,7 @@ export default function Home() {
 
       {/* onboarding businesses section */}
       <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
-        <div className="container flex flex-col md:flex-row justify-between px-4 md:px-8 lg:px-20">
+        <div className="container flex flex-col md:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
           <div className="max-w-[570px]">
             <h1 className="font-redHat font-extrabold text-xl lg:text-[32px] text-[#626262] max-w-[405px] leading-tight mb-4">
               Ready to onboard{" "}
@@ -72,6 +70,11 @@ export default function Home() {
               Transform your business with Clientyne.
             </p>
           </div>
+
+          <div>
+            <Image src={PillIcon} alt="" className="lg:w-14 lg:h-14 " />
+          </div>
+
           <div className="flex flex-col md:flex-row gap-5">
             <Card className="bg-[#333333] w-full max-w-[216px] h-[194px]">
               <CardHeader className="font-redHat text-[#fff] text-[32px]">5k</CardHeader>
