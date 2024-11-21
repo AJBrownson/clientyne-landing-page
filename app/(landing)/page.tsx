@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Hero from "@/public/hero.png";
 import About from "@/public/about-image.png";
-import PillIcon from "@/public/icons/Pill 1.png"
+import PillIcon from "@/public/icons/Pill 1.png";
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
-import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png"
-import Img from "@/public/icons/img.png"
-import Star from "@/public/icons/Star.png"
+import ArrowRightGreen from "@/public/icons/circle-arrow-right-green.png";
+import Img from "@/public/icons/img.png";
+import Star from "@/public/icons/Star.png";
 import Cards from "@/components/HeroCards";
 import FAQs from "@/components/FAQs";
 
@@ -41,8 +41,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30">
-              {/* Gradient Background */}
-  <div className="absolute inset-0 w-full bg-heroBG bg-cover bg-center -z-10"></div>
+            {/* Gradient Background */}
+            <div className="absolute inset-0 w-full bg-heroBG bg-cover bg-center -z-10"></div>
             <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} />
             {/* </div> */}
 
@@ -79,13 +79,17 @@ export default function Home() {
 
           <div className="flex gap-5 mt-8 lg:mt-0">
             <Card className="bg-[#333333] w-full max-w-[216px] lg:h-[194px]">
-              <CardHeader className="font-redHat text-[#fff] text-[32px]">5k</CardHeader>
+              <CardHeader className="font-redHat text-[#fff] text-[32px]">
+                5k
+              </CardHeader>
               <CardContent className="font-onest font-medium text-sm text-[#C6C6C6] w-full mx-auto max-w-[184px]">
                 Active businesses ready to onboard Clientyne!
               </CardContent>
             </Card>
             <Card className="bg-[#F9F9F9] w-full max-w-[216px] lg:h-[194px]">
-              <CardHeader className="font-redHat text-[#3D3D3D] text-[32px]">4.9</CardHeader>
+              <CardHeader className="font-redHat text-[#3D3D3D] text-[32px]">
+                4.9
+              </CardHeader>
               <CardContent className="font-onest font-medium text-sm text-[#A5A5A5]">
                 <div className="flex justify-between items-center mb-3">
                   <Image src={Star} alt="" className="w-5 h-5" />
@@ -94,7 +98,7 @@ export default function Home() {
                   <Image src={Star} alt="" className="w-5 h-5" />
                   <Image src={Star} alt="" className="w-5 h-5" />
                 </div>
-              Rating processing...
+                Rating processing...
               </CardContent>
             </Card>
           </div>
@@ -178,8 +182,8 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex justify-center">
-          <Image src={Img} alt="" className="w-[180px] absolute bottom-0" />
-          </div>
+              <Image src={Img} alt="" className="w-[180px] absolute bottom-0" />
+            </div>
           </div>
         </div>
       </section>

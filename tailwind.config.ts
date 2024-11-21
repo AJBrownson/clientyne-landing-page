@@ -91,12 +91,17 @@ const config: Config = {
 				'75%': { transform: 'rotate(540deg)', animationTimingFunction: 'ease-out' },
 				'100%': { transform: 'rotate(720deg)' },
 			  },
+			  wiggle: {
+				'0%, 100%': { transform: 'rotate(-9deg)' },
+				'50%': { transform: 'rotate(9deg)' },
+			  },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
 			'spin-slow-fast': 'spin-slow-fast 4s infinite', // Animation with a 4s duration
 			'spin-slow': 'spin-slow 8s linear infinite', // Custom slow spin
+			wiggle: "wiggle 1s ease-in-out infinite",
   		}
   	}
   },

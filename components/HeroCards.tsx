@@ -17,7 +17,7 @@ export default function Cards() {
       <section className="grid grid-cols-1 grid-rows-4 gap-y-5 md:grid-cols-3 md:grid-rows-2 md:gap-x-5 lg:flex lg:flex-row lg:justify-between lg:gap-x-8">
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-          <Image src={Pyramid} alt="" className="w-10 h-10 absolute translate-x-3 -translate-y-7 animate-spin-slow" />
+          <Image src={Pyramid} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Marketplace} alt="" width={30} height={30} />
@@ -35,7 +35,7 @@ export default function Cards() {
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-        <Image src={Icosahedron} alt="" className="w-10 h-10 absolute translate-x-3 -translate-y-7 animate-spin-slow-fast" />
+        <Image src={Icosahedron} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Clients} alt="" width={30} height={30} />
@@ -53,7 +53,7 @@ export default function Cards() {
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-        <Image src={Cube} alt="" className="w-10 h-10 absolute translate-x-3 -translate-y-7" />
+        <Image src={Cube} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Analytics} alt="" width={30} height={30} />
@@ -71,7 +71,7 @@ export default function Cards() {
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-          <Image src={Cylinder} alt="" className="w-10 h-10 absolute translate-x-3 -translate-y-7 " />
+          <Image src={Cylinder} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7 " />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Invoice} alt="" width={30} height={30} />
