@@ -9,9 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-		backgroundImage: {
-			'heroBG': "url('/hero-gradient.png')",
-		},
+  		backgroundImage: {
+  			heroBG: 'url('/hero-gradient.png')'
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -52,6 +52,16 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
   		fontFamily: {
@@ -80,28 +90,48 @@ const config: Config = {
   					height: '0'
   				}
   			},
-			  'spin-slow': {
-				'0%': { transform: 'rotate(0deg)' },
-				'100%': { transform: 'rotate(360deg)' },
-			  },
-			  'spin-slow-fast': {
-				'0%': { transform: 'rotate(0deg)' },
-				'25%': { transform: 'rotate(180deg)', animationTimingFunction: 'ease-in' },
-				'50%': { transform: 'rotate(360deg)' },
-				'75%': { transform: 'rotate(540deg)', animationTimingFunction: 'ease-out' },
-				'100%': { transform: 'rotate(720deg)' },
-			  },
-			  wiggle: {
-				'0%, 100%': { transform: 'rotate(-9deg)' },
-				'50%': { transform: 'rotate(9deg)' },
-			  },
+  			'spin-slow': {
+  				'0%': {
+  					transform: 'rotate(0deg)'
+  				},
+  				'100%': {
+  					transform: 'rotate(360deg)'
+  				}
+  			},
+  			'spin-slow-fast': {
+  				'0%': {
+  					transform: 'rotate(0deg)'
+  				},
+  				'25%': {
+  					transform: 'rotate(180deg)',
+  					animationTimingFunction: 'ease-in'
+  				},
+  				'50%': {
+  					transform: 'rotate(360deg)'
+  				},
+  				'75%': {
+  					transform: 'rotate(540deg)',
+  					animationTimingFunction: 'ease-out'
+  				},
+  				'100%': {
+  					transform: 'rotate(720deg)'
+  				}
+  			},
+  			wiggle: {
+  				'0%, 100%': {
+  					transform: 'rotate(-9deg)'
+  				},
+  				'50%': {
+  					transform: 'rotate(9deg)'
+  				}
+  			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			'spin-slow-fast': 'spin-slow-fast 4s infinite', // Animation with a 4s duration
-			'spin-slow': 'spin-slow 8s linear infinite', // Custom slow spin
-			wiggle: "wiggle 1s ease-in-out infinite",
+  			'spin-slow-fast': 'spin-slow-fast 4s infinite',
+  			'spin-slow': 'spin-slow 8s linear infinite',
+  			wiggle: 'wiggle 1s ease-in-out infinite'
   		}
   	}
   },
