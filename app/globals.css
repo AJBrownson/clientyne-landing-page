@@ -24,7 +24,7 @@ body {
 } */
 
 .grad {
-  height: 50vh;
+  height: 1000px;
   width: 100%;
   background-image: radial-gradient(closest-side, #FF8749, #fff);
   background-size: cover;
@@ -34,15 +34,19 @@ body {
 
 @media (max-width: 768px) {
   .grad {
-    height: 40vh; /* Smaller height for smaller screens */
-    width: 90%; /* Slightly smaller width */
+    /* height: 40vh; */
+    height: 20vh;
+    width: 90%;
   }
 }
 
 @media (max-width: 480px) {
   .grad {
-    height: 30vh; /* Further reduce height */
-    width: 100%; /* Maintain full width */
+    height: 43vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

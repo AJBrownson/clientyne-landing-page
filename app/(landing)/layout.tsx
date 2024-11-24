@@ -52,7 +52,7 @@ export default function LandingLayout({
   return (
     <html lang="en">
       <body className={`${redHat.variable} ${onest.variable} antialiased`}>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* <Footer /> */}
       </body>
