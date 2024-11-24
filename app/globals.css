@@ -11,6 +11,42 @@ body {
   /* max-width: 1280px; */
 }
 
+/* .grad {
+  height: 100vh;
+  width: 100vw;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  background-image: radial-gradient(closest-side, #FF8749, #fff);
+} */
+
+.grad {
+  height: 50vh;
+  width: 100%;
+  background-image: radial-gradient(closest-side, #FF8749, #fff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .grad {
+    height: 40vh; /* Smaller height for smaller screens */
+    width: 90%; /* Slightly smaller width */
+  }
+}
+
+@media (max-width: 480px) {
+  .grad {
+    height: 30vh; /* Further reduce height */
+    width: 100%; /* Maintain full width */
+  }
+}
+
+
 ::-webkit-scrollbar {
   display: none;
 }
