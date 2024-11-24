@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		backgroundImage: {
-  			heroBG: 'url('/hero-gradient.png')'
+  			heroBG: "url('/hero-gradient.png')"
   		},
   		colors: {
   			background: 'hsl(var(--background))',
