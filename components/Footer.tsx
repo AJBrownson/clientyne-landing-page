@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/public/clientyne-logo-black.svg";
 import { Button } from "./ui/button";
 
+
 export default function Footer() {
   return (
     <>
