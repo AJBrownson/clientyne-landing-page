@@ -27,7 +27,7 @@ const redHat = localFont({
 });
 
 
-const title = "Clientyne | Manage all your ecommerce needs here"
+const title = "Clientyne | Simplify Customer Management"
 const description = "An ecommerce app to help you manage your data"
 
 export const metadata: Metadata = {

@@ -26,11 +26,43 @@
             </div>
           </div>
 
+{/_ hero section _/}
+<section className="pt-32 md:pt-36 lg:pt-44">
+<div className="container flex flex-col px-4 md:px-8 lg:px-40">
+<div className="mx-auto max-w-[864px] justify-center text-center">
+<h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
+Simplify Customer Management and{" "}
+<span className="text-[#FF8749] lg:leading-[63.5px]">
+Boost Growth
+</span>
+</h1>
+<p className="mt-5 font-onest text-[#626262] font-medium lg:text-base leading-[22.95px] max-w-[650px] mx-auto">
+Manage your customers easily with our simple tools. Gain valuable
+insights to help your business grow. Simplify your processes and
+focus on what matters most.
+</p>
+<div className="mt-6 flex justify-center">
+<Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full hover:bg-[#008080]">
+Join Waitlist{" "}
+<span>
+<Image src={ArrowRightGreen} alt="" className="w-5 h-5" />
+</span>
+</Button>
+</div>
+</div>
+<div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30">
+<Image src="/icons/oval.png" alt="" width={119.7} height={119.7} />
+<Image
+              src={Hero}
+              alt="Hero image of Clientyne dashboard"
+              className="top-14 absolute"
+            />
+</div>
+</div>
+</section>
 
-
-   {/* hero section */}
-      <section className="pt-32 md:pt-36 lg:pt-44">
-        <div className="container flex flex-col px-4 md:px-8 lg:px-40">
+      {/* <section className="pt-32 md:pt-36 lg:pt-44">
+        <div className="container flex flex-col px-4 md:px-8 ">
           <div className="mx-auto max-w-[864px] justify-center text-center">
             <h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
               Simplify Customer Management and{" "}
@@ -43,6 +75,9 @@
               insights to help your business grow. Simplify your processes and
               focus on what matters most.
             </p>
+          </div>
+
+          <div className="px-4 md:px-8 lg:px-40">
             <div className="mt-6 flex justify-center">
               <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full hover:bg-[#008080]">
                 Join Waitlist{" "}
@@ -51,14 +86,23 @@
                 </span>
               </Button>
             </div>
-          </div>
-          <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30">
-            <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} />
+            <div className="mt-5 md:mt-8 lg:mt-10 flex flex-col">
+            {/* <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30"> */}
+            {/* <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} /> */}
             <Image
               src={Hero}
               alt="Hero image of Clientyne dashboard"
-              className="top-14 absolute"
+              className=""
             />
           </div>
+          </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+create a div
+fill with color
+place picture inside div and add padding
+clip div to desired shape

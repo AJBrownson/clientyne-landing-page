@@ -39,7 +39,7 @@ export default function FAQs() {
         </AccordionItem>
 
         <AccordionItem value="item-4" className="border-none">
-          <AccordionTrigger className="font-onest font-medium lg:text-base text-[#626262] bg-[#F9F9F9] px-5 rounded-xl hover:no-underline">
+          <AccordionTrigger className="font-onest font-medium lg:text-base text-[#626262] bg-[#F9F9F9] text-left px-5 rounded-xl hover:no-underline">
             What features will be included in the first version?
           </AccordionTrigger>
           <AccordionContent className="font-onest text-sm text-[#626262] bg-[#F9F9F9] pl-5 pr-10 rounded-xl">

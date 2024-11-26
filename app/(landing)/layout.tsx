@@ -27,7 +27,7 @@ const redHat = localFont({
   variable: "--font-red-hat",
 });
 
-const title = "Clientyne | Manage all your ecommerce needs here"
+const title = "Clientyne | Simplify Customer Management"
 const description = "An ecommerce app to help you manage your data"
 
 export const metadata: Metadata = {
@@ -54,7 +54,7 @@ export default function LandingLayout({
       <body className={`${redHat.variable} ${onest.variable} antialiased`}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

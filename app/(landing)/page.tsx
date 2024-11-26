@@ -18,9 +18,9 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <section className="pt-32 md:pt-36 lg:pt-44">
-        <div className="container flex flex-col ">
-          <div className="mx-auto max-w-[864px] justify-center text-center px-4 md:px-8 lg:px-40">
+       <section className="pt-32 md:pt-36 lg:pt-44" id="home">
+        <div className="container flex flex-col px-4 md:px-8 lg:px-40">
+          <div className="mx-auto max-w-[864px] justify-center text-center">
             <h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
               Simplify Customer Management and{" "}
               <span className="text-[#FF8749] lg:leading-[63.5px]">
@@ -32,9 +32,6 @@ export default function Home() {
               insights to help your business grow. Simplify your processes and
               focus on what matters most.
             </p>
-          </div>
-
-          <div className="grad px-4 md:px-8 lg:px-40">
             <div className="mt-6 flex justify-center">
               <Button className="font-onest font-medium lg:text-base flex items-center justify-center bg-[#008080] py-6 px-4 rounded-full hover:bg-[#008080]">
                 Join Waitlist{" "}
@@ -43,21 +40,21 @@ export default function Home() {
                 </span>
               </Button>
             </div>
-            <div className="mt-5 md:mt-8 lg:mt-10 flex flex-col">
-            {/* <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center relative -z-30"> */}
-            {/* <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} /> */}
+          </div>
+
+          <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center">
+             {/* <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} /> */}
             <Image
               src={Hero}
               alt="Hero image of Clientyne dashboard"
               className=""
             />
           </div>
-          </div>
         </div>
-      </section>
+      </section> 
 
       {/* onboarding businesses section */}
-      {/* <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
+       <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
         <div className="container flex flex-col md:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
           <div className="max-w-[570px]">
             <h1 className="font-redHat font-extrabold text-xl lg:text-[32px] text-[#626262] max-w-[405px] leading-tight mb-4">
@@ -104,10 +101,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* features section  */}
-      {/* <section className="mt-20 lg:mt-20">
+      <section className="mt-20 lg:mt-20">
         <div className="container flex flex-col items-center justify-center px-4 md:px-8 lg:px-20">
           <div className="max-w-[766px] mx-auto text-center">
             <div className="flex flex-col justify-center items-center">
@@ -117,7 +114,7 @@ export default function Home() {
               </h1>
               <p className="mt-5 md:mt-6 text-sm font-onest text-[#626262] leading-[20.4px] max-w-[590px]">
                 {" "}
-                we’re dedicated to providing powerful tools tailored to small
+                We’re dedicated to providing powerful tools tailored to small
                 and medium businesses. Our team works hard to give you easy,
                 effective tools designed to help your business grow.
               </p>
@@ -127,13 +124,13 @@ export default function Home() {
             <Cards />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* about section */}
-      {/* <section className="mt-20 lg:mt-20 flex flex-col lg:flex-row justify-between items-center">
+      <section className="mt-20 lg:mt-20 flex flex-col lg:flex-row justify-between items-center">
         <div className="container flex flex-col lg:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
           <div className="flex flex-col order-last lg:order-first w-full lg:max-w-[520px]">
-            <h1 className="font-redHat font-black text-center md:text-left text-2xl lg:text-4xl leading-relaxed mt-3 mb-2 lg:mb-5">
+            <h1 className="font-redHat font-black text-2xl lg:text-4xl leading-relaxed mt-3 mb-2 lg:mb-5">
               <span className="text-[#626262]">Clientyne:</span> Built for your
               business growth
             </h1>
@@ -160,10 +157,10 @@ export default function Home() {
             className="lg:w-[528px] lg:h-[440px] object-contain"
           />
         </div>
-      </section> */}
+      </section>
 
       {/* call to action card section */}
-      {/* <section className="mt-10 md:mt-20 lg:mt-40">
+      <section className="mt-10 md:mt-20 lg:mt-40">
         <div className="container px-4 md:px-8 lg:px-28">
           <div className="py-10 px-8 lg:py-20 text-center relative bg-[#333333] text-[#FFF] rounded-xl max-w-[1036px]">
             <h1 className="font-redHat text-xl font-extrabold lg:text-4xl mb-5">
@@ -187,17 +184,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* faqs section  */}
-      {/* <section className="mt-20 lg:mt-40">
+      <section className="mt-20 lg:mt-40" id="faq">
         <div className="container flex flex-col lg:flex-row justify-between px-4 md:px-8 lg:px-20">
           <h1 className="font-redHat font-black text-2xl text-center lg:text-left mb-4 lg:text-4xl">
             Frequently asked Questions
           </h1>
           <FAQs />
         </div>
-      </section> */}
+      </section>
     </>
   );
 }
