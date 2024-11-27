@@ -27,8 +27,8 @@ const redHat = localFont({
   variable: "--font-red-hat",
 });
 
-const title = "Clientyne | Simplify Customer Management"
-const description = "An ecommerce app to help you manage your data"
+const title = "Clientyne | Simplify Customer Management";
+const description = "An ecommerce app to help you manage your data";
 
 export const metadata: Metadata = {
   title,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-  }
+  },
 };
 
 export default function LandingLayout({

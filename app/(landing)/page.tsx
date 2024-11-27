@@ -17,9 +17,12 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 export default function Home() {
   return (
     <>
-      {/* hero section */}
-       <section className="pt-32 md:pt-36 lg:pt-44" id="home">
-        <div className="container flex flex-col px-4 md:px-8 lg:px-40">
+      {/* hero section */}       
+        {/* <div className="w-[700px] h-[400px] bg-[#FF8749] rounded-t-full blur-[90px]"></div> */}
+
+        
+      <section className="pt-32 md:pt-36 lg:pt-44" id="home">
+         <div className="container flex flex-col px-4 md:px-8 lg:px-40">
           <div className="mx-auto max-w-[864px] justify-center text-center">
             <h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
               Simplify Customer Management and{" "}
@@ -42,8 +45,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-5 md:mt-8 lg:mt-10 flex justify-center">
-             {/* <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} /> */}
+          <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col justify-center items-center relative">
+          <div className="w-full h-9 md:h-40 lg:h-80 bg-[#FF8749] rounded-t-full blur-[100px] absolute top-20 lg:top-16 -z-30"></div>
+            <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} className="absolute -top-14 -z-20" />
             <Image
               src={Hero}
               alt="Hero image of Clientyne dashboard"
@@ -51,10 +55,13 @@ export default function Home() {
             />
           </div>
         </div>
-      </section> 
+      </section>
+
+
+
 
       {/* onboarding businesses section */}
-       <section className="pt-40 md:pt-[21rem] lg:pt-[30rem]">
+      <section className="mt-10 md:mt-20 lg:mt-40">
         <div className="container flex flex-col md:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
           <div className="max-w-[570px]">
             <h1 className="font-redHat font-extrabold text-xl lg:text-[32px] text-[#626262] max-w-[405px] leading-tight mb-4">

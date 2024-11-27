@@ -106,3 +106,6 @@ create a div
 fill with color
 place picture inside div and add padding
 clip div to desired shape
+
+
+
