@@ -26,7 +26,7 @@ export default function Cards() {
                 </p>
               </div>
           </CardHeader>
-          <CardContent className="mt-10">
+          <CardContent className="mt-5 md:mt-10">
               <div className="text-left">
                 <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">Customized <br />store</h1>
                 <p className="text-[#666] text-xs font-onest font-medium mt-3">Clientyne’s personalized shop helps you manage your products and connect with customers your way.</p>
@@ -44,7 +44,7 @@ export default function Cards() {
                 </p>
               </div>
           </CardHeader>
-          <CardContent className="mt-10">
+          <CardContent className="mt-5 md:mt-10">
               <div className="text-left">
                 <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">Manage your customers</h1>
                 <p className="text-[#666] text-xs font-onest font-medium mt-3">Easily manage all your customer details in one place and build better relationships.</p>
@@ -62,7 +62,7 @@ export default function Cards() {
                 </p>
               </div>
           </CardHeader>
-          <CardContent className="mt-10">
+          <CardContent className="mt-5 md:mt-10">
               <div className="text-left">
                 <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">Clear insights for better decisions</h1>
                 <p className="text-[#666] text-xs font-onest font-medium mt-3">Gain insights into your business performance and make data-driven decisions with ease.</p>
@@ -80,7 +80,7 @@ export default function Cards() {
                 </p>
               </div>
           </CardHeader>
-          <CardContent className="mt-10">
+          <CardContent className="mt-5 md:mt-10">
               <div className="text-left">
                 <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">Easy invoicing, organized payments</h1>
                 <p className="text-[#666] text-xs font-onest font-medium mt-3">Send automatic invoices quickly, keeping your payments organized and hassle-free.</p>
