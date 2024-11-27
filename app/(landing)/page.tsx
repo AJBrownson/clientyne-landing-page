@@ -17,10 +17,7 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 export default function Home() {
   return (
     <>
-      {/* hero section */}       
-        {/* <div className="w-[700px] h-[400px] bg-[#FF8749] rounded-t-full blur-[90px]"></div> */}
-
-        
+      {/* hero section */}
       <section className="pt-32 md:pt-36 lg:pt-44" id="home">
          <div className="container flex flex-col px-4 md:px-8 lg:px-40">
           <div className="mx-auto max-w-[864px] justify-center text-center">
@@ -56,9 +53,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
 
       {/* onboarding businesses section */}
       <section className="mt-10 md:mt-20 lg:mt-40">
@@ -187,7 +181,7 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex justify-center">
-              <Image src={Img} alt="" className="w-[180px] absolute bottom-0" />
+              <Image src={Img} alt="" className="w-[180px] absolute -bottom-[0.5px] animate-slow-wiggle" />
             </div>
           </div>
         </div>
