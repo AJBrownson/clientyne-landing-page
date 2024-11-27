@@ -21,7 +21,7 @@ export default function Cards() {
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Marketplace} alt="" width={30} height={30} />
-                <p className="font-onest text-xs px-1 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
+                <p className="font-onest text-xs px-2 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
                   Marketplace
                 </p>
               </div>
@@ -39,7 +39,7 @@ export default function Cards() {
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Clients} alt="" width={30} height={30} />
-                <p className="font-onest text-xs px-1 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
+                <p className="font-onest text-xs px-2 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
                   Clients
                 </p>
               </div>
@@ -57,7 +57,7 @@ export default function Cards() {
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Analytics} alt="" width={30} height={30} />
-                <p className="font-onest text-xs px-1 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
+                <p className="font-onest text-xs px-2 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
                   Analytics
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function Cards() {
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Invoice} alt="" width={30} height={30} />
-                <p className="font-onest text-xs px-1 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
+                <p className="font-onest text-xs px-2 py-[1px] flex items-center rounded-full bg-[#E6F8ED] border border-[#B0EAC7] text-[#626262]">
                   Invoice
                 </p>
               </div>

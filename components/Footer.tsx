@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Logo from "@/public/clientyne-logo-black.svg";
 import { Button } from "./ui/button";
+import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -32,10 +34,20 @@ export default function Footer() {
             </div>
 
             <div className="mt-5 md:mt-0">
-              <p className="text-[#FFFFFF] font-onest font-semibold text-base">Connect with Us</p>
-              <p className="font-onest font-semibold text-[#C6C6C6] text-sm mt-3">X</p>
-              <p className="font-onest font-semibold text-[#C6C6C6] text-sm my-3">Instagram</p>
-              <p className="font-onest font-semibold text-[#C6C6C6] text-sm">Linkedin</p>
+              <p className="text-[#FFFFFF] font-onest font-semibold text-base mb-3">Connect with Us</p>
+
+              <Link href="/" className="flex items-center gap-x-1 text-[#C6C6C6] hover:text-[#fff]">
+                <BsCaretRightFill />
+              <p className="font-onest font-semibold text-sm">X</p>
+              </Link>
+               <Link href="/" className="flex items-center gap-x-1 text-[#C6C6C6] hover:text-[#fff]">
+                <BsCaretRightFill />
+              <p className="font-onest font-semibold text-sm my-3">Instagram</p>
+              </Link>
+               <Link href="/" className="flex items-center gap-x-1 text-[#C6C6C6] hover:text-[#fff]">
+                <BsCaretRightFill />
+              <p className="font-onest font-semibold text-sm">Linkedin</p>
+              </Link>
             </div>
           </div>
         </div>

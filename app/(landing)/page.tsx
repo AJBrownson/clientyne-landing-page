@@ -46,7 +46,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col justify-center items-center relative">
-          <div className="w-full h-9 md:h-40 lg:h-80 bg-[#FF8749] rounded-t-full blur-[100px] absolute top-20 lg:top-16 -z-30"></div>
+          <div className="w-full h-9 md:h-40 lg:h-[16rem] bg-[#FF8749] rounded-t-full blur-[100px] absolute top-20 lg:top-16 -z-30"></div>
             <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} className="absolute -top-14 -z-20" />
             <Image
               src={Hero}
