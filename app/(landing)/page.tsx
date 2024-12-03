@@ -16,6 +16,7 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 export default function Home() {
   return (
     <main className="max-w-7xl mx-auto">
+
       {/* hero section */}
       <section className="pt-28 md:pt-36 lg:pt-44" id="home">
          <div className="container flex flex-col px-4 md:px-8 lg:px-40">
@@ -78,24 +79,24 @@ export default function Home() {
 
           <div className="flex gap-5 mt-8 lg:mt-0">
             <Card className="bg-[#333333] w-full max-w-[216px] lg:h-[194px]">
-              <CardHeader className="font-redHat text-[#fff] text-[32px]">
+              <CardHeader className="font-redHat text-[#fff] text-[20px] md:text-[32px]">
                 5k
               </CardHeader>
-              <CardContent className="font-onest font-medium text-sm text-[#C6C6C6] w-full mx-auto max-w-[184px]">
+              <CardContent className="font-onest font-medium text-xs md:text-sm text-[#C6C6C6] w-full mx-auto max-w-[184px]">
                 Active businesses ready to onboard Clientyne!
               </CardContent>
             </Card>
             <Card className="bg-[#F9F9F9] w-full max-w-[216px] lg:h-[194px]">
-              <CardHeader className="font-redHat text-[#3D3D3D] text-[32px]">
+              <CardHeader className="font-redHat text-[#3D3D3D] text-[20px] md:text-[32px]">
                 4.9
               </CardHeader>
-              <CardContent className="font-onest font-medium text-sm text-[#A5A5A5]">
+              <CardContent className="font-onest font-medium text-xs md:text-sm text-[#A5A5A5]">
                 <div className="flex justify-between items-center mb-3">
-                  <Image src={Star} alt="" className="w-5 h-5" />
-                  <Image src={Star} alt="" className="w-5 h-5" />
-                  <Image src={Star} alt="" className="w-5 h-5" />
-                  <Image src={Star} alt="" className="w-5 h-5" />
-                  <Image src={Star} alt="" className="w-5 h-5" />
+                  <Image src={Star} alt="" className="w-[18px] h-[18px] md:w-5 md:h-5" />
+                  <Image src={Star} alt="" className="w-[18px] h-[18px] md:w-5 md:h-5" />
+                  <Image src={Star} alt="" className="w-[18px] h-[18px] md:w-5 md:h-5" />
+                  <Image src={Star} alt="" className="w-[18px] h-[18px] md:w-5 md:h-5" />
+                  <Image src={Star} alt="" className="w-[18px] h-[18px] md:w-5 md:h-5" />
                 </div>
                 Rating processing...
               </CardContent>

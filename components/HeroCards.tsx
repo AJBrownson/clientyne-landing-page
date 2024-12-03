@@ -14,10 +14,10 @@ import Pyramid from "@/public/icons/Pyramid.png"
 export default function Cards() {
   return (
     <>
-      <section className="grid grid-cols-1 grid-rows-4 gap-y-10 md:grid-cols-3 md:grid-rows-2 md:gap-x-5 lg:flex lg:flex-row lg:justify-between lg:gap-x-8">
+      <section className="grid grid-cols-1 grid-rows-4 gap-y-6 md:grid-cols-3 md:grid-rows-2 md:gap-x-5 lg:flex lg:flex-row lg:justify-between lg:gap-x-8">
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-          <Image src={Pyramid} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
+          <Image src={Pyramid} alt="" className="hidden lg:block w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Marketplace} alt="" width={30} height={30} />
@@ -28,14 +28,17 @@ export default function Cards() {
           </CardHeader>
           <CardContent className="mt-5 md:mt-10">
               <div className="text-left">
-                <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">Customized <br />store</h1>
+                <h1 className="font-redHat text-[#3D3D3D] font-bold text-xl">
+                <span className="sm:hidden">Customized store</span>
+                <span className="hidden md:block">Customized <br />store</span>
+                </h1>
                 <p className="text-[#666] text-xs font-onest font-medium mt-3">Clientyne’s personalized shop helps you manage your products and connect with customers your way.</p>
               </div>
             </CardContent>
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-        <Image src={Icosahedron} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
+        <Image src={Icosahedron} alt="" className="hidden lg:block w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Clients} alt="" width={30} height={30} />
@@ -53,7 +56,7 @@ export default function Cards() {
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-        <Image src={Cube} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7" />
+        <Image src={Cube} alt="" className="hidden lg:block w-10 h-10 absolute left-2 animate-wiggle -top-7" />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Analytics} alt="" width={30} height={30} />
@@ -71,7 +74,7 @@ export default function Cards() {
         </Card>
 
         <Card className="bg-[#F6F7F9] relative flex flex-col w-full md:max-w-[260px] border border-[#E8E8E8]">
-          <Image src={Cylinder} alt="" className="w-10 h-10 absolute left-2 animate-wiggle -top-7 " />
+          <Image src={Cylinder} alt="" className="hidden lg:block w-10 h-10 absolute left-2 animate-wiggle -top-7 " />
           <CardHeader>
           <div className="flex gap-x-3">
                 <Image src={Invoice} alt="" width={30} height={30} />
