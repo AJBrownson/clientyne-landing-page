@@ -45,10 +45,11 @@ export default function Home() {
           <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col justify-center items-center relative">
           <div className="w-full h-9 md:h-40 lg:h-[16rem] bg-[#FF8749] rounded-t-full blur-[100px] absolute top-20 lg:top-16 -z-30"></div>
             <Image src="/icons/oval.png" alt="" width={119.7} height={119.7} className="absolute -top-14 -z-20" />
+            <div className="absolute w-full h-auto top-0 left-o bg-red-700"></div>
             <Image
               src={Hero}
               alt="Hero image of Clientyne dashboard"
-              className=""
+              className="hero-img"
             />
           </div>
         </div>
@@ -155,7 +156,7 @@ export default function Home() {
           <Image
             src={About}
             alt=""
-            className="lg:w-[528px] lg:h-[440px] object-contain"
+            className="lg:w-[528px] lg:h-[440px] object-contain hero-img"
           />
         </div>
       </section>
