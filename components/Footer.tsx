@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <>
+    <main className="max-w-7xl mx-auto xl:px-20">
       <footer className="px-4 md:px-8 lg:px-20 pt-10 pb-6 bg-[#0E0E0D] mt-10 lg:mt-28">
         <div className="container flex flex-col lg:flex-row lg:items-center justify-between">
           <div className="flex flex-col max-w-[369px]">
@@ -58,6 +58,6 @@ export default function Footer() {
           <p className="font-onest text-xs text-[#C6C6C6] font-medium pt-2">2024 Clientyne</p>
         </div>
       </footer>
-    </>
+    </main>
   );
 }

@@ -15,9 +15,9 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <>
+    <main className="max-w-7xl mx-auto">
       {/* hero section */}
-      <section className="pt-32 md:pt-36 lg:pt-44" id="home">
+      <section className="pt-28 md:pt-36 lg:pt-44" id="home">
          <div className="container flex flex-col px-4 md:px-8 lg:px-40">
           <div className="mx-auto max-w-[864px] justify-center text-center">
             <h1 className="font-redHat text-[#3D3D3D] text-2xl md:text-4xl lg:text-[42px] font-black tracking-wide lg:leading-[60px]">
@@ -196,6 +196,6 @@ export default function Home() {
           <FAQs />
         </div>
       </section>
-    </>
+    </main>
   );
 }
