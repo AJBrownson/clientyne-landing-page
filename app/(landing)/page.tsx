@@ -132,7 +132,7 @@ export default function Home() {
       <section className="mt-20 lg:mt-20 flex flex-col lg:flex-row justify-between items-center">
         <div className="container flex flex-col lg:flex-row justify-between items-center px-4 md:px-8 lg:px-20">
           <div className="flex flex-col order-last lg:order-first w-full lg:max-w-[520px]">
-            <h1 className="font-redHat font-black text-2xl lg:text-4xl leading-relaxed mt-3 mb-2 lg:mb-5">
+            <h1 className="hidden lg:block font-redHat font-black text-2xl lg:text-4xl leading-relaxed mt-3 mb-2 lg:mb-5">
               <span className="text-[#626262]">Clientyne:</span> Built for your
               business growth
             </h1>
@@ -153,18 +153,22 @@ export default function Home() {
               empowering experience.
             </p>
           </div>
+          <h1 className="lg:hidden font-redHat font-black text-2xl lg:text-4xl leading-relaxed mb-8">
+              <span className="text-[#626262]">Clientyne:</span> Built for your
+              business growth
+            </h1>
           <Image
             src={About}
             alt=""
-            className="lg:w-[528px] lg:h-[440px] object-contain hero-img"
+            className="lg:w-[528px] lg:h-[440px] object-contain hero-img mb-8 lg:mb-0"
           />
         </div>
       </section>
 
       {/* call to action card section */}
       <section className="mt-10 md:mt-20 lg:mt-40">
-        <div className="container px-4 md:px-8 lg:px-28">
-          <div className="py-10 px-8 lg:py-20 text-center relative bg-[#333333] text-[#FFF] rounded-xl max-w-[1036px]">
+        <div className="container md:px-8 lg:px-28">
+          <div className="py-10 px-8 lg:py-20 text-center relative bg-[#333333] text-[#FFF] md:rounded-xl max-w-[1036px]">
             <h1 className="font-redHat text-xl font-extrabold lg:text-4xl mb-5">
               Join us early and grow your business
             </h1>
