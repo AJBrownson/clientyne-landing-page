@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader } from "./ui/card";
 import Analytics from "@/public/icons/analytics.png";
 import Marketplace from "@/public/icons/marketplace.png";
 import Clients from "@/public/icons/clients.png";
