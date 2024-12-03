@@ -86,6 +86,7 @@ export default function Home() {
                 Active businesses ready to onboard Clientyne!
               </CardContent>
             </Card>
+            
             <Card className="bg-[#F9F9F9] w-full max-w-[216px] lg:h-[194px]">
               <CardHeader className="font-redHat text-[#3D3D3D] text-[20px] md:text-[32px]">
                 4.9
@@ -153,10 +154,13 @@ export default function Home() {
               empowering experience.
             </p>
           </div>
-          <h1 className="lg:hidden font-redHat font-black text-2xl lg:text-4xl leading-relaxed mb-8">
+
+          <div className="lg:hidden text-left">
+          <h1 className="font-redHat font-black text-2xl md:text-4xl leading-relaxed mb-8">
               <span className="text-[#626262]">Clientyne:</span> Built for your
               business growth
             </h1>
+            </div>
           <Image
             src={About}
             alt=""
