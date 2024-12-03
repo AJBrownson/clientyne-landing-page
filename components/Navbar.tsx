@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import Logo from "@/public/clientyne-logo.svg";
+import Logo from "@/public/clientyne-logo-black.svg";
 import Link from "next/link";
 
 export default function Navbar() {

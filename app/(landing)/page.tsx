@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Hero from "@/public/hero.png";
-import Gradient from "@/public/gradient-bg.svg";
 import About from "@/public/about-image.png";
 import PillIcon from "@/public/icons/Pill 1.png";
 import ArrowRight from "@/public/icons/circle-arrow-right-01.png";
